@@ -2,7 +2,7 @@ package Encode::Base32::GMP;
 use strict;
 use warnings;
 use 5.008_009;
-our $VERSION   = '0.01';
+our $VERSION   = '0.02';
 
 use base         qw(Exporter);
 our @EXPORT    = qw(encode_base32 decode_base32);
@@ -219,15 +219,18 @@ compatible with L<Encode::Base32::Crockford> while also adding BigInt support.
 
 While this module can be used to transcode other Base32 encodings, this
 module is not designed to encode and decode binary strings, for which
-L<Convert::Base32>, L<MIME::Base32>, and L<Convert::Base32::Crockford> can
+L<Convert::Base32>, L<Convert::Base32::Crockford>, and L<MIME::Base32> can
 be used. These modules also result in different and longer encodings for
 numbers which is not desirable when encoding digests and other uids.
 
 =head1 SEE ALSO
 
 Crockford Base32 Encoding Definition: L<http://www.crockford.com/wrmg/base32.html>
+
 RFC 4648 Definition: L<http://tools.ietf.org/html/rfc4648>
+
 z-base-32 Definition: L<http://philzimmermann.com/docs/human-oriented-base-32-encoding.txt>
+
 GMP: L<http://gmplib.org/>
 
 L<Encode::Base32::Crockford>, L<Encode::Base58::GMP>, L<Math::GMPz>, L<Digest::MD5>

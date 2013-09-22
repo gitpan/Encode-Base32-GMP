@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Encode-Base32-GMP,
-version 0.01:
+version 0.02:
 
   High speed Base32 encoding using GMP with BigInt and MD5 support
 
